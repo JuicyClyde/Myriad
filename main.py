@@ -133,7 +133,6 @@ def delete_old_videos(folder, days_old=30):
         if os.path.isfile(path) and (now - os.path.getctime(path)) > (days_old * 86400):
             os.remove(path)
 
-# === STATE ===
 paused = False
 closed_start_time = None
 video_writer = None
